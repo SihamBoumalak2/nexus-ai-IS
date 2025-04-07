@@ -192,7 +192,7 @@ class AgentCoordinator:
             original_message = cursor.fetchone()
 
             if original_message:
-                response_to_message_id = original_message[0]  # ✅ Link reply to the latest student question
+                response_to_message_id = original_message[0]  #  Link reply to the latest student question
             else:
                 response_to_message_id = None
 
