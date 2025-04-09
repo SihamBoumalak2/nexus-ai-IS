@@ -68,30 +68,19 @@ The project’s core intelligence is implemented using a modular multi-agent sys
 The `AgentCoordinator` acts as the communication hub between the dashboard interface and the intelligent agents.
 
 ---
+## Project Documentation
+### 1. Clone the repository
+### 2. Set up a virtual environment
+python -m venv venv
+source venv/bin/activate  # (On Windows: venv\Scripts\activate)
+### 3. Install Requirements
+pip install -r requirements.txt
 
-## System Requirements
+### 4. Run the app
+python app.py
 
-- Python 3.10 or later
-- Flask
-- SQLite3
-- OpenCV
-- NumPy
-- OpenAI API key (for GPT-based agents)
-- Flask==2.2.5
-- Flask-SQLAlchemy==3.1.1
-- Flask-Bcrypt==1.0.1
-- Flask-Login==0.6.2
-- numpy==1.26.4
-- opencv-contrib-python==4.8.0.76
-- opencv-python==4.8.0.76
-- openpyxl==3.1.2
-- pandas==2.2.1
-- pillow==10.2.0
-- pyttsx3==2.90
+### 5. Open in browser
+http://127.0.0.1:5000/
 
-
-### API Key Configuration
-
-The OpenAI key must be placed in a `.env` file in the root directory using the following format:
 
 
