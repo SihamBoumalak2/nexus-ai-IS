@@ -24,6 +24,33 @@ Key benefits include:
 - Scalable, modular architecture suitable for future expansion
 
 ---
+## System Features
+
+### Admin Dashboard
+- Assign professors and students to classrooms
+- Manage user roles and classrooms
+- Manually generate and export attendance reports
+
+### Professor Dashboard
+- Start and stop facial recognition attendance sessions
+- View student lists, attendance records, and submitted justifications
+- Send replies directly to student messages
+
+### Student Dashboard
+- View personal attendance activity
+- Submit absence justifications
+- Chat with an AI agent for assistance
+- Receive alerts when absenteeism crosses a threshold
+---
+
+## Tech Stack
+
+| Layer         | Technology                            |
+|---------------|----------------------------------------|
+| **Frontend**  | HTML, CSS, JavaScript, Bootstrap, GSAP |
+| **Backend**   | Python (Flask), SQLite                 |
+| **AI/NLP**    | GPT-3.5 (via OpenAI API), Scikit-learn |
+| **Facial Rec**| OpenCV, Euclidean distance matching    |
 
 ## Agents Overview
 
