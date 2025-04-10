@@ -6,9 +6,19 @@ Nexus-AI is an AI-powered attendance management system developed as a senior the
 
 ## What the Project Does
 
-Nexus-AI is a multi-agent system that manages student attendance using facial recognition and autonomous agents that respond to user interaction. When a student logs in, their identity is verified using OpenCV and Euclidean distance-based facial recognition. A chatbot interface allows students to query their attendance status, and professors can manually generate attendance reports.
+Nexus-AI is a **multi-agent system** that manages student attendance using **facial recognition** and AI-driven agents. When a student logs in, their identity is verified using **OpenCV** and **Euclidean distance-based matching**.
 
-All system interactions—such as data retrieval, alerts, and predictions—are handled by specialized agents. Reports and alerts are only triggered when requested by the user, preserving control and data privacy.
+Once authenticated, students can:
+- View their attendance records
+- Submit absence messages
+- Receive automated or manual replies via the system’s messaging feature
+
+Professors can:
+- Start/stop live face recognition sessions
+- Manually generate reports
+- Reply to students or allow the AI agent to assist
+
+All AI-powered decisions (e.g., alerts, summaries, predictions) are handled by **specialized autonomous agents**, and **nothing is triggered without user interaction**—preserving control and respecting privacy.
 
 ---
 
@@ -18,29 +28,33 @@ This system automates a typically time-consuming and manual process while enhanc
 
 Key benefits include:
 
-- Reduced administrative workload for instructors
-- Real-time access to attendance data for students
-- Early warning of potential absenteeism trends
-- Scalable, modular architecture suitable for future expansion
+- Automates attendance using live facial recognition
+- Provides intelligent feedback using GPT
+- Detects early absenteeism trends
+- Enables real-time student tracking and statistics
+- Uses a modular multi-agent architecture for scalability
 
 ---
 ## System Features
 
 ### Admin Dashboard
-- Assign professors and students to classrooms
-- Manage user roles and classrooms
-- Manually generate and export attendance reports
+- Assign professors to classrooms
+- View system activity logs
+- Create/edit/delete users and classes
+- Export attendance reports (CSV)
 
 ### Professor Dashboard
-- Start and stop facial recognition attendance sessions
-- View student lists, attendance records, and submitted justifications
-- Send replies directly to student messages
+- Start/stop live attendance tracking
+- View attendance records
+- View/handle student absence messages (manual + AI)
+- Generate GPT-powered attendance insights
 
 ### Student Dashboard
-- View personal attendance activity
+- Log in via facial recognition or password
 - Submit absence justifications
-- Chat with an AI agent for assistance
-- Receive alerts when absenteeism crosses a threshold
+- Chat with an AI agent
+- Monitor personal attendance records
+- Receive warnings after repeated absences
 ---
 
 ## Tech Stack
@@ -51,6 +65,7 @@ Key benefits include:
 | **Backend**   | Python (Flask), SQLite                 |
 | **AI/NLP**    | GPT-3.5 (via OpenAI API), Scikit-learn |
 | **Facial Rec**| OpenCV, Euclidean distance matching    |
+| **Other**     | bcrypt, pandas, uuid, threading, dotenv |
 
 ## Agents Overview
 
